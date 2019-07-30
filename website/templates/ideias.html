@@ -1,0 +1,49 @@
+{% extends "shared/teste.html" %}
+{% load static %}
+{% block nav %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/estilocadastro.css' %}">
+    <script defer src="{% static 'js/script.js' %}"></script>
+    <title>Cadastro de ideias</title>
+</head>
+
+
+<body>
+    {% if pessoa is None %}
+        <h1>Ops!, você precisa se cadastrar primeiro :|</h1>
+        <p>
+            <a href="/cadastro">Clique aqui para se cadastrar</a>
+        </p>
+    {% else %}
+    <h1>Cadastre sua Ideia {{pessoa.nome}}</h1>
+    <section>
+    <form action="/ideias" method="POST">
+    <pre>
+        {% csrf_token %}
+        <input type="hidden" name="email" value="{{pessoa.email}}">
+        <input type="text" name="titulo" placeholder="Digite o nome da sua idéia:">
+        <label for="descricao">Descreva sua idéia</label>
+        <textarea name="descricao" cols="30" rows="20"></textarea>
+        <label for="categoria">Categoria</label>
+        <select name="categoria">
+            <option value="T">Tecnologia</option>
+            <option value="S">Saúde</option>
+            <option value="C">Culinária</option>
+            <option value="V">Vestimenta</option>
+            <option value="O">Outros</option>
+        </select>
+        <input type="text" name="categoria_outos" id='txt'placeholder="Caso outros, qual?">
+        <input type="submit" value="Cadastrar Idéia">
+        </pre>
+    </form>
+    </section>
+</body>
+{% endif %}
+{% endblock %}
+</body>
+</html>

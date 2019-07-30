@@ -1,0 +1,51 @@
+{% load static %}
+<html lang="pt-br">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/estilocadastro.css' %}">
+    <script defer src="{% static 'js/script.js' %}"></script>
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ideias malucas</h1>
+        <h2>Cadastre-se para ver e postar idéias</h2>
+    </header>
+    <section>
+        <form action="/cadastro" method="post">
+            {% csrf_token %}
+            <pre>
+            <label>Nome</label>
+            <input type="text" name="nome">
+
+            <label>Sobrenome</label>
+            <input type="text" name="sobrenome">
+        </pre>
+
+            <pre>
+            <label>E-mail</label>
+            <input type="text" name="email">
+
+            <label for="genero">Genero</label>
+            <select name="genero">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="O">Outro</option>
+            </select>
+        </pre>
+            <pre>
+            <label for="biografia"></label>
+            <textarea name="biografia" cols="40" rows="8"></textarea>
+            <input type="submit" id='validar' value="Cadastrar">
+        </pre>
+
+        </form>
+    </section>
+</body>
+
+</html>

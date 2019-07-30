@@ -1,0 +1,37 @@
+{% extends "shared/layout.html" %}
+{% block conteudo %}
+<title>Ideias Malucas</title>
+
+<body>
+    <header>
+        <h1>Bem Vindo ao Idéias Malucas</h1>
+    </header>
+    <div>
+        <h2>Este é um lugar para você se expressar, com relação a todo tipo de idéia estranha que você já teve.</h2>
+        <h3>Nós acreditamos que são é tipo de ideia que tranformam o mundo, então queremos que você abra sua mente.</h3>
+        <h3>Tudo o que você precisa fazer para descobrir Ideias incriveis, ou impactar pessoas com as suas é entrar em
+            nosso
+            site.</h3>
+    </div>
+
+    <section>
+        <h2>Login</h2>
+
+        <form action="/" method="POST">
+        {% csrf_token %}
+        <pre><input type="email" name="email" placeholder="E-mail"><input type="submit" value="Login"></pre>
+        <p>{{msg}}</p>
+        </form>
+    </section>
+
+    <div class="conteudo">
+        <h3>Ainda não tem uma conta?</h3>
+        <a href="http://localhost:8000/cadastro">Cadastre-se agora mesmo!</a>
+        <h3>Aproveite o Ideias Malucas!!!!</h3>
+        <h3>"Quando uma boa ideia acontece e seu comodismo a disperdiça você ficará em dívida com a humanidade"</h3>
+        <h3> - Ivan Teorilang</h3>
+    </div>
+
+</body>
+
+{% endblock conteudo %}

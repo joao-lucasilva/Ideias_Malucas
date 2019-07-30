@@ -1,0 +1,38 @@
+{% extends "shared/teste.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        {% block nav %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{% static 'css/listagem.css' %}">
+        <script defer src="{% static 'js/script.js' %}"></script>
+        <title>Ideias</title>
+</head>
+
+<body>
+
+
+        {{msg}}
+        <h1>Listagem das Ideas</h1>
+        <p>
+                {% for ideia in ideias %}
+                <fieldset>
+                        <p>{{ideia.pessoa.nome}}, Pensou num: </p>
+                        <p>{{ideia.titulo}}</p>
+                        <p>{{ideia.categoria}}</p>
+                        <p>Descrição: {{ideia.descricao}}</p>
+                        <a href="/remover_ideia/{{ideia.id}}"><input type="button" value="Deletar"></a>
+                        <hr>
+                </fieldset>
+                {% endfor %}
+        </p>
+
+        {% endblock %}
+</body>
+
+</html>

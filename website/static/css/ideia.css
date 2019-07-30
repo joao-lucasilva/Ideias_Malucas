@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    display: grid;
+    font-family: 'Damion', cursive;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+
+
+header {
+    display: grid;
+    text-align: center;
+}
+
+section {
+    display: grid;
+    align-items: center;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    width: 100%;
+}
+
+section input {
+    width: 230px;
+}

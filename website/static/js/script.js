@@ -1,0 +1,1 @@
+let txt = document.querySelector('#txt');
