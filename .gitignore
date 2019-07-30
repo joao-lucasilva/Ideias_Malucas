@@ -2,5 +2,7 @@ env
 .env
 .venv
 /env
-
+.vscode
+code
+.code
 vscode
