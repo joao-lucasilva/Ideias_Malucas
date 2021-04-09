@@ -16,6 +16,7 @@ Tabela de conteúdos
  
 ## Sobre
 O projeto consiste em um repositório onde pessoas podem cadastrar qualquer ideia que acham interessante. 
+![Ideias Malucas](https://github.com/joao-lucasilva/Ideias_Malucas/blob/master/website/static/img/scrennshot-ideias.JPG)
 ## Como Funciona
 * Basta realizar um cadastro com nome e email e começar a colocar suas ideias e também ver as ideias de outros usuários da plataforma. 
 
