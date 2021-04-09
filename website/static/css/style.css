@@ -7,29 +7,35 @@ body {
     align-items: center;
     justify-content: center;
 }
-header{
+
+header {
     display: grid;
     justify-content: center;
     align-items: center;
 }
-div{
-    background-image: url("website\static\img\ideia1.jpg");
+
+div {
+    background-image: url("../img/ideia1.jpg");
     display: grid;
     text-align: center;
 }
-section{
+
+section {
     display: grid;
     justify-content: center;
     align-items: center;
     background-color: bisque;
 }
-section h2{
+
+section h2 {
     text-align: center;
 }
-section .email{
+
+section .email {
     width: 200%;
 }
-.conteudo a{
+
+.conteudo a {
     text-decoration: none;
     color: #000;
 }
