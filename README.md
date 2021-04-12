@@ -1,6 +1,7 @@
 
 # Ideias Malucas
 ![HTML5](https://img.shields.io/badge/HTML-5-orange) ![CSS3](https://img.shields.io/badge/CSS-3-blue) ![JavaScript](https://img.shields.io/badge/Java-Script-yellow) ![Python](https://img.shields.io/badge/Python-3-blue) ![Django](https://img.shields.io/badge/Django-2.2.4-green) ![SQLite](https://img.shields.io/badge/SQ-Lite-blue)
+
 O ideias malucas foi o projeto da última semana do Bootcamp Academia Mastertech da Estação Hack by Facebook.
 
 O projeto foi desenvolvido como forma de se aplicar os conhecimentos de Python e Django que foram ensinados durante as duas ultimas semanas do bootcamp.
